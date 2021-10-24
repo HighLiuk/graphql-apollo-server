@@ -8,6 +8,10 @@ const typeDefs = gql`
     author(id: ID!): Author
   }
 
+  type Mutation {
+    addAuthor(name: String!, age: Int!): Author!
+  }
+
   type Book {
     id: ID!
     name: String!

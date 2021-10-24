@@ -19,6 +19,7 @@ const typeDefs = gql`
     id: ID!
     name: String!
     age: Int!
+    books: [Book!]!
   }
 `
 

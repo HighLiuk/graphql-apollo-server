@@ -1,5 +1,7 @@
-function books({ id }) {
-  // return _.filter(db.books, { authorId: id })
+const { Book } = require("../models")
+
+async function books({ id }) {
+  return await Book.findAll({ where: { authorId: id } })
 }
 
 module.exports = {

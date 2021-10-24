@@ -1,17 +1,19 @@
-function books() {
-  // return db.books
+const { Author, Book } = require("../models")
+
+async function books() {
+  return await Book.findAll()
 }
 
-function book(parent, { id }) {
-  // return _.find(db.books, { id })
+async function book(parent, { id }) {
+  return await Book.findOne({ where: { id } })
 }
 
-function authors() {
-  // return db.authors
+async function authors() {
+  return await Author.findAll()
 }
 
-function author(parent, { id }) {
-  // return _.find(db.authors, { id })
+async function author(parent, { id }) {
+  return await Author.findOne({ where: { id } })
 }
 
 module.exports = {

@@ -1,5 +1,7 @@
-function author({ authorId }) {
-  // return _.find(db.authors, { id: authorId })
+const { Author } = require("../models")
+
+async function author({ authorId }) {
+  return await Author.findOne({ where: { id: authorId } })
 }
 
 module.exports = {

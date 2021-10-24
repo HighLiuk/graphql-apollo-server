@@ -1,0 +1,18 @@
+{
+  "name": "graphql-apollo-server",
+  "version": "1.0.0",
+  "description": "GraphQL Practice with Apollo Server",
+  "main": "server/index.js",
+  "scripts": {
+    "dev:server": "nodemon server/index"
+  },
+  "author": "Luca Di Fazio",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.4.0",
+    "graphql": "^15.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}

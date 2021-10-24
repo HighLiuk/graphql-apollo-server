@@ -1,9 +1,9 @@
 const db = require("../data/db.json")
 
-function info() {
-  return "Hello World!"
+function books() {
+  return db.books
 }
 
 module.exports = {
-  info,
+  books,
 }
